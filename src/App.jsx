@@ -1,14 +1,14 @@
 import "./App.css";
 import Input from "./components/Input";
 import Navbar from "./components/Navbar";
-import FlexBox from "./components/FlexBox";
+// import ExploreFood from "./components/ExploreFood";
 
 function App() {
   return (
     <>
       <Navbar />
       <Input/>
-      <FlexBox/>
+      {/* <ExploreFood/> */}
 
     </>
   );

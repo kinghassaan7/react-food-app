@@ -1,15 +1,14 @@
 import "./App.css";
 import Input from "./components/Input";
 import Navbar from "./components/Navbar";
-// import ExploreFood from "./components/ExploreFood";
+import ExploreFoodList from "./components/ExploreFoodList";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Input/>
-      {/* <ExploreFood/> */}
-
+      <Input />
+      <ExploreFoodList />
     </>
   );
 }

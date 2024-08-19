@@ -1,30 +1,19 @@
-import React from 'react'
-import Burgur from "./src/assets/burgur"
-import Pizza from "./src/assets/pizza"
-import Momo from "./src/assets/momo"
-// import ExploreFood from './ExploreFood.jsx'
-
-
+import React from 'react';
+import burgur from "../assets/burgur.jpg";
+import pizza from "../assets/pizza.jpg";
+import momo from "../assets/momo.jpg";
+import ExploreFood from './ExploreFood';
 
 const ExploreFoodList = () => {
-
- let foodlist = [
- { name: "Pizza", image: Pizza},
- {name: "Burgur", image: Burgur},
- {name:"Momo", image:Momo}
- ];
+  let foodlist = [
+    { name: "Pizza", image: pizza },
+    { name: "Burgur", image: burgur },
+    { name: "Momo", image: momo }
+  ];
 
   return (
-    <div>
-      {foodlist.map((item, index) => {
-        <div key={index}>
-          <img src={item.image} alt="" />
-          <p>{item.name}</p>
-        </div>;
-      })}
-    </div>
-    //  <ExploreFood foodlist={foodlist}/>
+    <ExploreFood foodlist={foodlist} />
   );
 }
 
-export default ExploreFoodList
+export default ExploreFoodList;

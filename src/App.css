@@ -34,7 +34,12 @@
 
 @media (max-width: 768px) {
   .ul-navbar {
-    display: none;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ul-navbar li a {
+    font-size: 16px;
   }
 }
 
@@ -63,12 +68,11 @@
   max-width: 500px;
   border: none;
   padding: 15px;
-  margin-left: 10px;
   font-size: 18px;
 }
 
 .input-div button {
-  padding: 14px 30px;
+  padding: 14px 20px;
   font-size: 18px;
   border-radius: 5px;
   border: none;
@@ -88,10 +92,20 @@
     padding: 20px;
   }
 
+  .input-div div {
+    flex-direction: column;
+  }
+
   .input-div input {
     margin-bottom: 10px;
+    width: 90%;
+  }
+
+  .input-div button {
+    width: 90%;
   }
 }
+
 
 .explore-foods {
   text-align: center;
